@@ -1,0 +1,169 @@
+.chat-page {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chat-headline {
+  background-color: #DC143C;
+  padding: 15px 10px;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  font-family: 'Lato';
+  font-size: 2rem;
+}
+
+.button {
+  display: block;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 100%;
+  padding: 10px 10px;
+  border: 1px solid #7C7C7C;
+  background-color: #FFFFFF;
+  color: #D93656;
+  position: absolute;
+  right: 8px;
+  top: -50%;
+}
+.button:active {
+  color: #FBFBEA;
+  background-color: #D93656;
+}
+
+.textfield {
+  width: 100%;
+  min-height: 40px;
+  max-height: 100px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  vertical-align: top;
+  border: 1px solid #333;
+  overflow: auto;
+  margin: 0px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
+.wrapper {
+  display: flex;
+  flex: 0 0 calc(100% - 2rem - 30px);
+}
+
+.panel {
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: column;
+  background: #EEE;
+  border-left: 1px solid #333;
+  overflow: auto;
+}
+
+.chat {
+  flex: 1 0 0%;
+  padding: 8px;
+  margin: 0;
+  overflow: auto;
+  list-style-type: none;
+  border-left: 1px solid #333;
+}
+
+.send-form {
+  position: relative;
+}
+
+.message {
+  border: 1px solid #333;
+  clear: both;
+  float: left;
+  background: #FFFFFF;
+  min-width: 30%;
+  max-width: 60%;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.message--alternative {
+  float: right;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0 16px;
+  margin-top: 40px;
+}
+
+.menu-item a {
+  display: block;
+  color: rgba(51, 51, 51, 0.3);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+.menu-item a:hover {
+  background: #FFF;
+  color: #333;
+}
+
+.menu-item {
+  margin: 8px;
+}
+
+.menu-item .icon {
+  margin-right: 8px;
+}
+
+.profile-picture {
+  height: 20vh;
+  border-radius: 100%;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.contacts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact a {
+  border-bottom: 1px solid #333;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.last-message {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(51, 51, 51, 0.3);
+  margin-top: 8px;
+}
+
+.chat-name {
+  margin: 0;
+}
+
+.chat-picture {
+  width: 25%;
+  border-radius: 100%;
+}
+
+.meta {
+  margin: 0 16px;
+}

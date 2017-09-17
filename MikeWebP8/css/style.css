@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Megrim);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  background: #fff;
+}
+
+.nav-main {
+  text-align: center;
+}
+.nav-main ul {
+  width: auto;
+}
+@media (max-width: 650px) {
+  .nav-main ul {
+    width: 100%;
+    display: block;
+    background: #fff;
+    position: fixed;
+    bottom: -10px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+.nav-main li {
+  display: inline-block;
+  font-size: 1.5em;
+  transition: box-shadow 300ms;
+  border-top: 3px solid transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.nav-main li:hover {
+  border-top: 3px solid #FF7070;
+  transition: border 100ms linear;
+}
+.nav-main li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  color: inherit;
+}
+@media (max-width: 650px) {
+  .nav-main li a {
+    padding: 10px 8vw;
+  }
+}
+.nav-main li a i.fa {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .nav-main li a i.fa {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .nav-main li a .li-text {
+    display: none;
+    font-family: "Roboto Slab";
+  }
+}
+
+.logo-top {
+  display: none;
+  font-size: 4em;
+  padding: 0 20px;
+  font-family: 'Megrim', serif;
+  text-shadow: 3px 6px 0 rgba(50, 50, 50, 0.1);
+}
+@media (max-width: 1200px) {
+  .logo-top {
+    display: block;
+  }
+}
+
+.logo-text {
+  display: inline-block;
+  font-size: 4em;
+  padding: 0 20px;
+  font-family: 'Megrim', serif;
+  text-shadow: 3px 6px 0 rgba(50, 50, 50, 0.1);
+}
+@media (max-width: 1200px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+::selection {
+  background: #FF7070;
+  color: #fff;
+}
+
+.hero {
+  height: 50vmin;
+  background-image: url('../images/flathealth.png');
+  background-position: 50% 50%;
+}
+.hero .hero-btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: rgba(50, 50, 50, 0.2);
+  color: white;
+  text-shadow: 3px 3px 0 rgba(50, 50, 50, 0.2);
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  border-radius: 60px;
+  padding: 10px 40px;
+  margin: 0;
+  font-size: 1.5em;
+  font-family: 'Roboto Slab';
+  box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.2);
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+.hero .hero-btn:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 2px;
+  width: 150px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.87) 10%, rgba(255, 255, 255, 0));
+}
+.hero .hero-btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  height: 2px;
+  width: 150px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.87));
+}
+.hero .hero-btn:hover {
+  color: #ff7070;
+  background: rgba(255, 255, 255, 0.87);
+  text-shadow: 0px 0px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 0px 0 rgba(50, 50, 50, 0.2);
+  transition: all 200ms ease-in-out;
+}
+.hero .hero-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content {
+  text-align: center;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+
+#logoplacement1 img { 
+    position: absolute;
+    
+     top: 16px;
+   right: 1600px;
+   width: 80px;
+      height: 80px;
+}
+
+.about, .skills {
+  max-width: 900px;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 10px 20px;
+  min-height: 50vh;
+}
+.section .section-heading {
+  display: block;
+  font-size: 2em;
+  margin: 30px 0;
+}
+.section .section-heading:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+  height: 5px;
+  width: 30vw;
+  background: linear-gradient(90deg, rgba(255, 77, 77, 0.6) 10%, rgba(255, 255, 255, 0));
+}
+.section .section-heading:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  height: 5px;
+  width: 30vw;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(255, 77, 77, 0.6));
+}
+@media (max-width: 900px) {
+  .section {
+    padding: 20px 5px;
+  }
+}
+@media (max-width: 650px) {
+  .section {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+}
+.section p {
+  padding: 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.fade-in {
+  opacity: 0.2;
+}
+
+.demo {
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin: 20px;
+  width: 500px;
+  padding: 0 10px 2px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 rgba(50, 50, 50, 0.1);
+  background: #FF7070;
+}
+.demo .demo-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 10px;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .demo {
+    margin: 10px;
+  }
+}
+
+.contact {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.contact h2 {
+  font-size: 2em;
+  margin: 0 0 20px 0;
+}
+.contact .fa {
+  font-size: 3em;
+}
+.contact .fa:hover {
+  color: #FF7070;
+  transform: scale(1.2);
+}
+.contact a {
+  color: #fff;
+  margin: 0 6%;
+}
+
+.legal {
+  background: #222;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+}
+@media (max-width: 650px) {
+  .legal {
+    padding-bottom: 60px;
+  }
+}
+
+.hidden {
+  display: none;
+  transition: all 500ms ease;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  height: 4em;
+  width: 4em;
+  background: #FF7070;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 rgba(50, 50, 50, 0.2);
+  opacity: 0.6;
+  color: #fff;
+  transition: all 200ms ease;
+}
+.scroll-top i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+.scroll-top:hover {
+  cursor: pointer;
+  background: #FF7070;
+  opacity: 1;
+  box-shadow: 0px 0px 0 rgba(50, 50, 50, 0.2);
+}
+@media (max-width: 650px) {
+  .scroll-top {
+    display: none;
+  }
+}
+
+
