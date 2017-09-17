@@ -97,7 +97,8 @@ body {
 .hero {
   height: 50vmin;
   background-image: url('../images/flathealth.png');
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
 }
 .hero .hero-btn {
   position: relative;
@@ -158,9 +159,9 @@ body {
     position: absolute;
     
      top: 16px;
-   right: 1600px;
-   width: 80px;
-      height: 80px;
+    right: 1850px;
+    width: 150px;
+    height: 150px;
 }
 
 .about, .skills {
